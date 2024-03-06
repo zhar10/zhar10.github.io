@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191931;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    gap: 1rem;
+}
+
+.my-photo {
+    width: 10rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sosmed i {
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+.sosmed a:not(:last-child) {
+    margin-right: 1rem;
+
+}
+
+ul {
+    width: 80%;
+    max-width: 40rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul.sosmed li:not(:last-child) {
+  margin-bottom: 1rem;  
+}
+
+.sosmed {
+    margin-top: 1rem;
+}
+
+.Link-Card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d56;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 8px 10px 0 #0f0f25;
+    border: 2px solid #2d2d56;
+
+}
+
+.Link-Card:hover {
+    border: 2px solid white
+}
+
+.sosmed .link-icon {
+    background-image: linear-gradient(to top, purple, cyan);
+    padding: 0.5rem;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sosmed .link-icon i {
+    color: white;
+}
+
+.link-action {
+    color: #8787a3;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8787a3;
+}
+
+.copyright img {
+    width: 10rem;
+    opacity: 0.4;
+}
+
+/* Gaya untuk ikon sosial media */
+.sosmed a i {
+    color: white; /* Warna default ikon */
+    transition: color 0.3s; /* Menambahkan transisi warna */
+}
+
+.sosmed a:hover i {
+    color: orange; /* Warna yang diinginkan saat ikon dihover */
+}
